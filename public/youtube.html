@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube League</title>
+    <script src="./js/search.js" type="text/javascript"></script>
+    <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body style="background-color: #22272a">
+
+<a style="padding-left: 25%; padding-top: 100px; color: red; font-size: large" id="back to Justice League" href="#" onclick="location.href='http://localhost:3000'">back to Justice League</a>
+
+<div class="container" style="padding-left: 25%; padding-top: 60px">
+    <input id="query" value='Lil Dicky - $ave Dat Money' type="text" />
+    <button onclick="search()" >Search</button>
+</div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div id="results"></div>
+            </div>
+        </div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="./js/search.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+
+</body>
+</html>

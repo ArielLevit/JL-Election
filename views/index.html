@@ -7,16 +7,19 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="../public/stylesheets/fluidbox.min.css">
-    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/fluidbox.min.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
     <title>Justice League Election</title>
-    <script src="../public/js/jquery.fluidbox.min.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/jquery.fluidbox.min.js"></script>
+    <script src="./js/main.js"></script>
 
 </head>
 <body>
@@ -27,8 +30,9 @@
     <main>
         <nav>
             <ul>
-                <li><a href="#">Candidates</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" onclick="location.href='./candidates.html';">Candidates</a></li>
+                <li><a href="#" onclick="location.href='./youtube.html';">Services</a></li>
                 <li><a href="#">Elections Rally</a></li>
                 <li><a href="#">Contact Ariel</a></li>
             </ul>
@@ -41,7 +45,7 @@
     </div>
 </header>
 
-    <iframe class="trailer" src="https://www.youtube.com/embed/OiAmnKUaNmc?autoplay=1" frameborder="0"
+    <iframe class="trailer" src="https://www.youtube.com/embed/OiAmnKUaNmc" frameborder="0"
             allowfullscreen></iframe>
     <!--?autoplay=1-->
 
@@ -56,52 +60,95 @@
 
     <div class="container">
         <div class="row" id="votes">
-            <div class="col-xs-2 col-s-4 col-md-3 thumbnail">
-                <img class="hero" src="../public/img/C.jpg" alt="#">
+            <div class="col-xxs-1 col-xs-2 col-s-4 col-md-3 thumbnail">
+                <img class="hero" src="./img/C.jpg" alt="#">
                 <div class="caption">
                     <p>Cyborg</p>
-                    <p><a href="#" class="button" role="button" onclick="vote(); return false;"></a></p>
+                    <a href="#" data-voteid="#vC" class="button" role="button" onclick="voteMe('Cyborg'); return false;"></a>
                 </div>
             </div>
-            <div class="col-xs-2 col-s-4 col-md-3 thumbnail">
-                <img class="hero" src="../public/img/AM.jpg" alt="#">
+            <div class="col-xxs-1 col-xs-2 col-s-4 col-md-3 thumbnail">
+                <img class="hero" src="./img/AM.jpg" alt="#">
                 <div class="caption">
                     <p>Aquaman</p>
-                    <p><a href="#" class="button" role="button" onclick="vote(); return false;"></a></p>
+                    <a href="#" data-voteid="#vA" class="button" role="button" onclick="voteMe('Aquaman'); return false;"></a>
                 </div>
             </div>
-            <div class="col-xs-2 col-s-4 col-md-3 thumbnail">
+            <div class="col-xxs-1 col-xs-2 col-s-4 col-md-3 thumbnail">
                 <img class="hero" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyMjEwNzQzMl5BMl5BanBnXkFtZTgwNzA0MTM4MTI@._V1_SY1000_CR0,0,674,1000_AL_.jpg" alt="#">
                 <div class="caption">
                     <p>Batman</p>
-                    <p><a href="#" class="button" role="button" onclick="vote(); return false;"></a></p>
+                    <a href="#" data-voteid="#vB" class="button" role="button" onclick="voteMe('Batman'); return false;"></a>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-xs-2 col-s-4 col-md-3 thumbnail">
+            <div class="col-xxs-1 col-xs-2 col-s-4 col-md-3 thumbnail">
                 <img class="hero" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMmUxNjM1ODktM2Y4MS00MjYxLThiODYtMjQxMDcyMzk3NDllXkEyXkFqcGdeQXVyNjM1MTQ0NTQ@._V1_SY1000_CR0,0,674,1000_AL_.jpg" alt="#">
                 <div class="caption">
                     <p>Wonder Woman</p>
-                    <p><a href="#" class="button" role="button" onclick="vote(); return false;"></a></p>
+                    <a href="#" class="button" role="button" onclick="voteMe('Wonder Woman'); return false;"></a>
                 </div>
             </div>
-            <div class="col-xs-2 col-s-4 col-md-3 thumbnail">
+            <div class="col-xxs-1 col-xs-2 col-s-4 col-md-3 thumbnail">
                 <img class="hero" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3MjIzOTQzMV5BMl5BanBnXkFtZTgwODA0MTM4MTI@._V1_SY1000_CR0,0,674,1000_AL_.jpg" alt="#">
                 <div class="caption">
                     <p>The Flash</p>
-                    <p><a href="#" class="button" role="button" onclick="vote(); return false;"></a></p>
+                    <script> var vF = 0;</script>
+                    <a href="#" class="button" role="button" onclick="voteMe('The Flash'); vF++ ;document.getElementById('vF').innerHTML = vF.toString(); return false;"></a>
                 </div>
             </div>
-            <div class="col-xs-2 col-s-4 col-md-3 thumbnail">
-                <img class="hero" src="../public/img/BO.jpg" alt="#">
+            <div class="col-xxs-1 col-xs-2 col-s-4 col-md-3 thumbnail">
+                <img class="hero" src="./img/BO.jpg" alt="#">
                 <div class="caption" >
                     <p>Black Obama</p>
-                    <p><a href="#" id="vote" class="button" role="button" onclick="vote(); return false;" ></a></p>
+                    <script> var vBO = 0;</script>
+                    <a href="#" class="button" role="button" onclick="voteMe('Black Obama'); vBO++ ;document.getElementById('vBO').innerHTML = vBO.toString(); return false;" ></a>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!--<div class="container">-->
+            <!--<a href="#" class="votes" role="button"-->
+               <!--onclick="window.open('./votes.html', 'newwindow', 'width=600, height=350'); return false;" ></a>-->
+    <!--</div>-->
+    <div class="container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Candidates</th>
+                <th>Votes</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Cyborg</td>
+                <td id="vC"></td>
+            </tr>
+            <tr>
+                <td>Aquaman</td>
+                <td id="vA"></td>
+            </tr>
+            <tr>
+                <td>Batman</td>
+                <td id="vB"></td>
+            </tr>
+            <tr>
+                <td>Wonder Woman</td>
+                <td id="vWW"></td>
+            </tr>
+            <tr>
+                <td>The Flash</td>
+                <td id="vF"></td>
+            </tr>
+            <tr>
+                <td>Black Obama</td>
+                <td id="vBO"></td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 
     <section class="row">
@@ -135,50 +182,10 @@
             </p>
         </div>
     </section>
-
 </div>
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script>
-    if (!window.jQuery)
-    {
-        document.write('<script src="../public/js/jquery.1.11.min.js"><\/script>');
-    }
-</script>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="../public/js/jquery.fluidbox.min.js"></script>
-<script src="../public/js/main.js"></script>
-
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'YOUR_GOOGLE_ANALYTICS_ID', 'auto');
-    ga('send', 'pageview');
-
-    $(function() {
-
-        var navBtn = $('.nav-btn');
-        function toggleNav() {
-            navBtn.toggleClass('open');
-            $('nav').toggleClass('open');
-            $('.container').toggleClass('open');
-        }
-        navBtn.click(function() {
-            toggleNav();
-        })
-        $('nav ul li a').click(function(e) {
-            toggleNav();
-        })
-    })
-</script>
-
 </body>
 </html>
 

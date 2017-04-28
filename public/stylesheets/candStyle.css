@@ -1,0 +1,52 @@
+.intro h1 {
+    font-size: 3em;
+    letter-spacing: 0.3px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+#Tab {
+    color : white;
+    background-color: rgba(15, 20, 23, 0.28);
+    padding : 20px;
+    border-radius: 5px;
+    border: solid rgba(221, 221, 221, 0.69) 1px;
+    box-shadow: black 2px 2px 15px;
+}
+#Tab li a{
+    z-index: 9999;
+}
+.model{
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    height: 70%;
+    display:none;
+}
+.xButton{
+    position: fixed;
+    width: 1.5%;
+    height: 2.5%;
+    border-radius: 50%;
+    right: 10%;
+    bottom: 50%;
+    cursor: pointer;
+    display: none;
+    box-shadow: black 6px 4px 18px;
+}
+.xButton:after{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Ionicons';
+    content: '\f128';
+    font-size: 30px;
+}
+
+
+
+
+
+
