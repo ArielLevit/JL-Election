@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="initial-scale=1.0, user-scalable=no">-->
+    <title>Election Rallies</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/candStyle.css">
+    <link rel="stylesheet" href="./stylesheets/fluidbox.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="./js/jquery.fluidbox.min.js"></script>
+
+    <link rel="stylesheet" href="./stylesheets/ralliesStyle.css">
+    <script src="./js/ralliesMap.js"></script>
+</head>
+<body>
+<header>
+    <div class="nav-btn">
+        <span></span>
+    </div>
+    <main>
+        <nav>
+            <ul>
+                <li><a id="home" href="#" onclick="location.href='http://localhost:3000'">Home</a></li>
+                <li><a href="#" onclick="location.href='./candidates.html';">Candidates</a></li>
+                <li><a href="#" onclick="location.href='./youtube.html';">Services</a></li>
+                <li><a href="#">Election Rallies</a></li>
+                <li><a href="#">Contact Ariel</a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <div id="logo-container">
+        <div id="logo"><a href="#">Justice League 2017 Election</a></div>
+        <div id="subtitle">"so i start a revolution from my bed" - John Lennon</div>
+    </div>
+</header>
+
+<section class="intro">
+    <h1>Election Rallies</h1>
+    <h2>Find out where is the nearest candidate rally's from you</h2>
+    <p></p>
+</section>
+
+<div class="container">
+    <table class="table heroes">
+        <thead>
+        <tr>
+            <th><input id="cyborgButton" class="buttonMap" type="button" value="Cyborg" data-map="cyborg"></th>
+            <th><input id="aquamanButton" class="buttonMap" type="button" value="Aquaman" data-map="aquaman"></th>
+            <th><input id="batmanButton" class="buttonMap" type="button" value="Batman" data-map="batman"></th>
+            <th><input id="wwButton" class="buttonMap" type="button" value="Wonder Woman" data-map="ww"></th>
+            <th><input id="flashButton" class="buttonMap" type="button" value="The Flash" data-map="flash"></th>
+            <th><input id="obamaButton" class="buttonMap" type="button" value="Black Obama" data-map="obama"></th>
+        </tr>
+        </thead>
+    </table>
+</div>
+
+
+
+<div id="map"></div>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyHq8tokF0l3Wxve0x9IkMea3FoMhhjPQ&callback=initMap">
+</script>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

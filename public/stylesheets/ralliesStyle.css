@@ -1,0 +1,41 @@
+.intro h1{
+    margin-bottom: 0;
+}
+.intro h2 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+#map {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: black 5px 5px 20px;
+}
+.buttonMap {
+    color: black;
+}
+#aquamanButton:hover{
+    background-color: #255da3;
+}
+#obamaButton:hover{
+    background-color: #4c150d;
+    color: white;
+}
+#wwButton:hover{
+    background-color: #db6dc7;
+}
+#cyborgButton:hover{
+    background-color: #878681;
+}
+#flashButton:hover{
+    background-color: #d80000;
+}
+#batmanButton:hover{
+    background-color: #2f3f2f;
+    color: white;
+}

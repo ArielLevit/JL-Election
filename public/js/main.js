@@ -43,51 +43,6 @@ $(function () {
     });
 });
 
-
-
-
-// var vC = 0;
-// var vA = 0;
-// var vB = 0;
-// var vWW = 0;
-// var vF = 0;
-// var vBO = 0;
-// var vC, vA, vB, vWW, vF, vBO;
-
-
-var heroId;
-function votesCounter(heroId, hero) {
-    hero++;
-
-    document.getElementById(heroId).innerHTML = hero.toString();
-    // switch (hero){
-    //     case "Cyborg":
-    //         vC += 1;
-    //         document.getElementById("vC").innerHTML = vC;
-    //         break;
-    //     case "Aquaman":
-    //         vA += 1;
-    //         document.getElementById("vA").innerHTML = vA;
-    //         break;
-    //     case "Batman":
-    //         vB += 1;
-    //         document.getElementById("vB").innerHTML = vB;
-    //         break;
-    //     case "Wonder Woman":
-    //         vWW += 1;
-    //         document.getElementById("vWW").innerHTML = vWW;
-    //         break;
-    //     case "The Flash":
-    //         vF += 1;
-    //         document.getElementById("vF").innerHTML = vF;
-    //         break;
-    //     case "Black Obama":
-    //         vBO += 1;
-    //         document.getElementById("vBO").innerHTML = vBO;
-    //         break;
-    // }
-}
-
 //Side Nav
 $(function() {
     var navBtn = $('.nav-btn');
@@ -106,6 +61,4 @@ $(function() {
 } );
 
 if (!window.jQuery)
-{
-    document.write('<script src="./js/jquery.1.11.min.js"><\/script>');
-}
+{document.write('<script src="./js/jquery.1.11.min.js"><\/script>');}
